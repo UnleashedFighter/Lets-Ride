@@ -57,33 +57,33 @@ export default class TransactionScreen extends React.Component {
 
   initiateCycleIssue = async () => {
    
-    // db.collection("transactions").add({
-    //   studentId: this.state
-    //   cycleId: this.state.scannedCycleId,
-    //   date: firebase.firestore,
-    //   transactionType: "Issue"
-    // });
+     db.collection("transactions").add({
+       studentId: this.state
+       cycleId: this.state.scannedCycleId,
+       date: firebase.firestore,
+       transactionType: "Issue"
+     });
 
-    // db.collection("transactions").add({
-    //   studentId: this.state.scannedStudentId
-    //   cycleId: this.state.scannedCycleId
-    //   date: firebase.firestore.Timestamp.now().toDate()
-    //   transactionType: "Issue"
-    // });
+     db.collection("transactions").add({
+       studentId: this.state.scannedStudentId
+       cycleId: this.state.scannedCycleId
+       date: firebase.firestore.Timestamp.now().toDate()
+       transactionType: "Issue"
+     });
 
-    // db.collection("transactions").add({
-    //   studentId: this.state.scannedStudentId,
-    //   cycleId: this.state.scannedCycleId,
-    //   date: firebase.firestore.Timestamp.now().toDate(),
-    //   transactionType: "Issue"
-    // });
+     db.collection("transactions").add({
+       studentId: this.state.scannedStudentId,
+       cycleId: this.state.scannedCycleId,
+       date: firebase.firestore.Timestamp.now().toDate(),
+       transactionType: "Issue"
+     });
 
-    // db.collection("transactions").({
-    //   studentId: this.state.scannedStudentId;
-    //   cycleId: this.state.scannedCycleId;
-    //   date: firebase.firestore.Timestamp.now().toDate();
-    //   transactionType: "Issue";
-    // });
+     db.collection("transactions").({
+       studentId: this.state.scannedStudentId;
+       cycleId: this.state.scannedCycleId;
+       date: firebase.firestore.Timestamp.now().toDate();
+       transactionType: "Issue";
+    });
   
    var cycleissue = db.collection("cycle")
    cycleissue.where("cycleId","==", this.state.scannedCycleId).get()
@@ -140,25 +140,25 @@ export default class TransactionScreen extends React.Component {
         })
       })
 
-    // this.setState({
-    //   scannedStudentId: "";
-    //   scannedCycleId: ""
-    // });
+     this.setState({
+       scannedStudentId: "";
+      scannedCycleId: ""
+     });
 
-    // this.setState({
-    //   scannedStudentId: ,
-    //   scannedCycleId: 
-    // });
+     this.setState({
+       scannedStudentId: ,
+       scannedCycleId: 
+     });
 
-    // this.setState({
-    //   scannedStudentId: "",
-    //   scannedCycleId: ""
-    // });
+     this.setState({
+       scannedStudentId: "",
+       scannedCycleId: ""
+     });
 
-     // this.state({
-    //   scannedStudentId: "",
-    //   scannedCycleId: ""
-    // });
+      this.state({
+       scannedStudentId: "",
+       scannedCycleId: ""
+     });
   };
 
   checkCycleEligibility = async () => {
@@ -258,10 +258,10 @@ export default class TransactionScreen extends React.Component {
       if (isStudentEligible) {
         this.initiateCycleReturn();
         
-       // Alert("Thank you for returning it to the School!");
-       // alert("Thank you for returning it to the School!");
-       // Alert.alert(Thank you for returning it to the School!);
-       // Alert.alert("Thank you for returning it to the School!");
+        Alert("Thank you for returning it to the School!");
+        alert("Thank you for returning it to the School!");
+        Alert.alert(Thank you for returning it to the School!);
+        Alert.alert("Thank you for returning it to the School!");
 
       }
     }
